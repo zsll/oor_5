@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Odyssey On Rails</title>
+	<title>A Rails Blog Template</title>
 	<%= stylesheet_link_tag "application", :media => "all" %>
 	<%= javascript_include_tag "application" %>
 	<%= javascript_include_tag "https://apis.google.com/js/plusone.js" %>
 	<%= csrf_meta_tags %>
-	<meta name="google-site-verification" content="-M-FVTGU8y4b_McIIaxr1P2GZBl-ntA8tt6WXpCz0BM" />
 </head>
 <body>
 <div id="fb-root"></div>
@@ -24,7 +23,6 @@
 			<%= yield %>
 		</div>
 		<div class="span3 oor-sidebar">
-			<%= render "layouts/ads_sidebar" %>
 			<%= render "layouts/archive_sidebar" %>
 		</div>		
 	</div>

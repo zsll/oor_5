@@ -3,4 +3,7 @@
 	<div class="oor-article-summary oor-justify-text-align">
 		<%= render "oor_summary_#{article.id}", :article => article %>
 	</div>
+	<%= link_to article_path(article) do %>
+		Read More <i class="icon-signin"></i>
+	<% end %>
 </div>
