@@ -5,4 +5,14 @@ ruby 1.8.7 (2012-02-08 patchlevel 358) [universal-darwin12.0]
 
 Abort trap: 6"%>
 <%= render 'code_section', :title => "terminal", :code => code_content %>
-You may find more information in <%= link_to "Odyssey On Rails", "http://odysseyonrails.com"%>.
+<% code = "class Constant
+  def self.continents
+    ['Europe', 'Asia', 'Australia', 'North America', 'South America', 'Africa', 'Antarctica']
+  end
+
+  def self.gender
+    {:female => 'gal', :male => 'guy', :else => '*@#\$'}
+  end
+end" %>
+<%= render 'code_section', :title => "/config/initializers/constants.rb", :code => code, :lang => :rb %>
+You may find more information from <%= link_to "Odyssey On Rails", "http://odysseyonrails.com"%>.
